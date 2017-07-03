@@ -1,14 +1,18 @@
 nb_cols=5
 nb_rows=5
 
-#first loop
+# first loop for rows
 for index_row in 1..nb_rows
-    #second loop
+    # second loop for columns
     for index in 1..nb_cols
-        print "."
+
+        # check for ending column
+        if index != nb_cols
+            print '.'
+        else
+            puts '.'
+        end
     end
-    #back to line at the end of each row
-    puts ""
 end
 
 
