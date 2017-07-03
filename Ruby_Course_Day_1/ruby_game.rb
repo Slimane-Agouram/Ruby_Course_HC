@@ -4,9 +4,9 @@ player = {col: 1, row: 1}
 
 def draw(nb_col, nb_row, player)
     # first loop for rows
-    for index_row in 1..nb_row
+    (1..nb_row).each do |index_row| 
         # second loop for columns
-        for index_col in 1..nb_col
+        (1..nb_row).each do |index_col| 
 
             # check for ending column
             if  index_col==player[:col]&& index_row==player[:row]
@@ -16,9 +16,9 @@ def draw(nb_col, nb_row, player)
             end
 
         end
-        puts ''
+        puts 
     end
-    puts ''
+    puts 
 end
 
 draw(5,6,col: 1, row: 1)
