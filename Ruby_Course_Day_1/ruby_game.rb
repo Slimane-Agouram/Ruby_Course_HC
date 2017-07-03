@@ -16,7 +16,21 @@ class Player
     def motif
         @motif
     end
+end
 
+class Game
+    def initialize(nb_col,nb_row)
+        @nb_col=nb_col
+        @nb_row=nb_row
+    end
+
+    def nb_col
+        @nb_col
+    end
+
+    def nb_row
+        @nb_row
+    end
 
     def draw(nb_col, nb_row, my_player)
         # first loop for rows
@@ -39,10 +53,11 @@ class Player
 
 end
 
+my_Game = Game.new(5,5)
 player1 = Player.new(2,2,"P")
 
-player1.draw(5,6,player1)
-player1.draw(2,2,player1)
+my_Game.draw(5,6,player1)
+my_Game.draw(2,2,player1)
 
 
 
