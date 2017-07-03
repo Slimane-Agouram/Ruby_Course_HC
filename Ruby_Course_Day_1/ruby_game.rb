@@ -1,5 +1,5 @@
 #  begin
-#  Classe Player
+#  Classe Player avec VS
 #  end   
 
 class Player
