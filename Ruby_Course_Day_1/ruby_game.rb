@@ -1,3 +1,7 @@
+#  begin
+#  Classe Player
+#  end   
+
 class Player
     def initialize(col, row, motif)
         @col = col
@@ -17,6 +21,12 @@ class Player
         @motif
     end
 end
+
+
+#  begin
+#  classe Game
+#  end   
+
 
 class Game
     def initialize(nb_col,nb_row)
