@@ -7,7 +7,7 @@ for index_row in 1..nb_rows
     for index in 1..nb_cols
         print "."
     end
-    #back to line at the end
+    #back to line at the end of each row
     puts ""
 end
 
