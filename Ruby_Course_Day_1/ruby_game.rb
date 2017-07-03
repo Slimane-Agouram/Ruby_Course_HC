@@ -1,7 +1,7 @@
 nb_cols=5
 nb_rows=5
 
-player = {"col"=>2, "row"=>3}
+player = {col:2, row:3}
 
 
 
@@ -11,7 +11,7 @@ for index_row in 1..nb_rows
     for index in 1..nb_cols
 
         # check for ending column
-        if  index==player["col"]&& index_row==player["row"]
+        if  index==player[:col]&& index_row==player[:row]
             print 'X'
         else
             print '.'
