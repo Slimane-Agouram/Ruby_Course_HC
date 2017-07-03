@@ -1,6 +1,6 @@
 
 
-player = {col: 2, row: 3}
+player = {col: 1, row: 1}
 
 def draw(nb_col, nb_row, player)
     # first loop for rows
@@ -18,7 +18,7 @@ def draw(nb_col, nb_row, player)
         end
         puts ''
     end
-    puts ''
+    puts 
 end
 
 draw(5,6,player)
