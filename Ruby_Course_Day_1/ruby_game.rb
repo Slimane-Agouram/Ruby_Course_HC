@@ -1,27 +1,49 @@
+class Player
+    def initialize(col, row, motif)
+        @col = col
+        @row=row
+        @motif = motif
+    end
+
+    def col
+        @col
+    end
+
+    def row
+        @row
+    end
+
+    def motif
+        @motif
+    end
 
 
-player = {col: 1, row: 1}
+    def draw(nb_col, nb_row, my_player)
+        # first loop for rows
+        (1..nb_row).each do |index_row| 
+            # second loop for columns
+            (1..nb_row).each do |index_col| 
 
-def draw(nb_col, nb_row, player)
-    # first loop for rows
-    (1..nb_row).each do |index_row| 
-        # second loop for columns
-        (1..nb_row).each do |index_col| 
+                # check for ending column
+                if  index_col==my_player.col && index_row==my_player.row
+                    print 'X'
+                else
+                    print '.'
+                end
 
-            # check for ending column
-            if  index_col==player[:col]&& index_row==player[:row]
-                print 'X'
-            else
-                print '.'
             end
-
+            puts 
         end
         puts 
     end
-    puts 
+
 end
 
-draw(5,6,col: 1, row: 1)
-draw(2,2,col: 1, row: 2)
+player1 = Player.new(2,2,"P")
+
+player1.draw(5,6,player1)
+player1.draw(2,2,player1)
+
+
 
 
