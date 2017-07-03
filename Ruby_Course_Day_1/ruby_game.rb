@@ -55,8 +55,9 @@ end
 
 my_Game = Game.new(5,5)
 player1 = Player.new(2,2,"P")
+player2 = Player.new(3,3, "A")
 
 my_Game.draw(5,6,player1)
 
-my_Game.draw(2,2,player1)
+my_Game.draw(4,4,player2)
 
