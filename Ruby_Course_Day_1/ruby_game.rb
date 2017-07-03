@@ -18,10 +18,10 @@ def draw(nb_col, nb_row, player)
         end
         puts ''
     end
-    puts 
+    puts ''
 end
 
-draw(5,6,player)
-draw(2,2,player)
+draw(5,6,col: 1, row: 1)
+draw(2,2,col: 1, row: 2)
 
 
