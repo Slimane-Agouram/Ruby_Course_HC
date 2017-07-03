@@ -26,7 +26,7 @@ class Player
 
                 # check for ending column
                 if  index_col==my_player.col && index_row==my_player.row
-                    print 'X'
+                    print my_player.motif
                 else
                     print '.'
                 end
