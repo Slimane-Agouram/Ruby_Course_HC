@@ -1,7 +1,7 @@
 nb_cols=5
 nb_rows=5
 
-player = {col:2, row:3}
+player = {col: 2, row: 3}
 
 
 
