@@ -8,7 +8,10 @@
 require_relative 'static_object'
 require_relative 'player'
 require_relative 'ruby'
-require 'colorize' 
+require "bundler"
+require "rubygems"
+bundler.require(:default)
+
 
 class Game
     def initialize(nb_col,nb_row)
