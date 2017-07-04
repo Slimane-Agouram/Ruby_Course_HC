@@ -1,23 +1,24 @@
 #  begin
 #  Classe Player avec VS
 #  end   
+ 
 
-class Player
-    def initialize(col, row, motif)
-        @col = col
-        @row=row
-        @motif = motif
+class Player < Static_object
+    def initialize(col, row)
+       super(col, row, "P")
     end
+    
 
-    def col
-        @col
-    end
+  def move (position_col, position_row)
+     self.col = position_col
+     self.row = position_row
+  end
 
-    def row
-        @row
-    end
+def move_random ()
+     self.col = rand(1..6)
+     self.row = rand(1..6)
+  end
 
-    def motif
-        @motif
-    end
+
 end
+
