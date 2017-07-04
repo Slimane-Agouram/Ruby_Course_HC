@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
     def hello
-        @message='Slimane'
+        @message=params[:message]
     end
 end

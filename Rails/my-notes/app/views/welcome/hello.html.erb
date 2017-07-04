@@ -1,3 +1,14 @@
 <html>
+
+
+<%if @message.present? %>
+
 <h1> hello <%= @message%></h1>
+
+<%else%>
+
+<h1>Hello unknown person</h1>
+
+<%end%>
+
 </html>
