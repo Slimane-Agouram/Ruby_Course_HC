@@ -27,7 +27,7 @@ requirements
 
 * Linux (DEBIAN/Arch/Manjaro, etc...) [Windows works too, environment onfiguration is needed though :)]
 * Ruby 2.x.x is installed
-* GEM pack is mnagement installed
+* GEM pack management is installed
 
 license
 -------
