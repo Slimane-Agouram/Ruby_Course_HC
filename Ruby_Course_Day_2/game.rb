@@ -8,6 +8,7 @@
 require_relative 'static_object'
 require_relative 'player'
 require_relative 'ruby'
+require 'colorize' 
 
 class Game
     def initialize(nb_col,nb_row)
@@ -27,11 +28,11 @@ class Game
 
                 # check for ending column
                 if  index_col==my_player.col && index_row==my_player.row
-                    print my_player.motif
+                    print my_player.motif.colorize(:color => :green, :background => :red)
                 elsif index_col==my_ruby.col && index_row==my_ruby.row
-                    print my_ruby.motif                
+                    print my_ruby.motif.colorize(:color => :red, :background => :light_blue)             
                 elsif my_player.col==my_ruby.col && my_player.row==my_ruby.row
-                    print "WINNER"
+                    print "WINNER".colorize(:orange)
                     break  
                 else
                     print '.'
