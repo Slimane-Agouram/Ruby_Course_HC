@@ -8,6 +8,14 @@ Rails.application.routes.draw do
 
    get '/notes', to: "notes#notes", as: :index_notes
 
+   get '/notes/new', to: "notes#new", as: :new_note
+   
    get '/notes(/:identifiant)', to: "notes#show", as: :show_notes
+
+   get '/notes/:identifiant/destroy', to: "notes#delete", as: :delete_note
+
+   
+
+
 
 end
