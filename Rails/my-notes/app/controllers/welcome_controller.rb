@@ -12,4 +12,7 @@ class WelcomeController < ApplicationController
         puts 'goodbye==========='
         render "goodbye"
     end
+
+
+   
 end

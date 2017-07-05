@@ -6,4 +6,8 @@ Rails.application.routes.draw do
 
    get '/goodbye', to: "welcome#goodbye"
 
+   get '/notes', to: "notes#notes", as: :index_notes
+
+   get '/notes(/:identifiant)', to: "notes#show", as: :show_notes
+
 end

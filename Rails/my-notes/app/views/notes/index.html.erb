@@ -1,0 +1,14 @@
+
+
+
+<h1>Liste</h1>
+
+<%= @mes_notes.each do |note| %>
+<h3><%=note.title%></h3>
+<%= link_to "#{note.title}", show_notes_path("#{note.id}"), class:'btn', id:'note'%>
+<%end%>
+
+<%= link_to "root", "/goodbye", class:'btn', id:'toto'%>
+<img src="poker.png">
+
+

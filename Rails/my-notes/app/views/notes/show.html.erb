@@ -1,0 +1,16 @@
+
+
+
+<%if @ma_note.present? %>
+
+    <h1>Note actuelle : <%=@ma_note.id%></h1>
+    <h3><%=@ma_note.title%></h3>
+    <h3><%=@ma_note.content%></h3>
+
+<% else %>
+    
+    <h3>Pas de note spécifiée</h3>
+
+<%end%>
+
+
