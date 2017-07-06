@@ -30,6 +30,7 @@ end
 
 
 def new
+    @note = Note.new
     render "new"
 end
 
