@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
 
-def notes
+def index
     @mes_notes = Note.all
     render "index"
 
@@ -32,6 +32,17 @@ end
 def new
     @note = Note.new
     render "new"
+end
+
+def create
+    puts params.inspect
+    created_note = Note.new
+    created_note.id = params[:note][:id]
+    created_note.title = params[:note][:title]
+    created_note.content = params[:note][:content]
+    created_note.save
+    redirect_to notes_path
+
 end
 
 end

@@ -5,6 +5,6 @@
 
 <% @mes_notes.each do |note| %>
 <h3><%=note.title%></h3>
-<%= link_to note.title, show_notes_path(note.id), class:'btn', id:'note'%>
+<%= link_to note.title, note_path(note.id), class:'btn', id:'note'%>
 <%end%>
 
