@@ -29,6 +29,11 @@ def delete
 end
 
 
+def note_params
+    params.require(:note).permit(:title, :content)
+end
+
+
 def new
     @note = Note.new
     render "new"
@@ -36,12 +41,14 @@ end
 
 def create
     puts params.inspect
-    created_note = Note.new
-    created_note.id = params[:note][:id]
-    created_note.title = params[:note][:title]
-    created_note.content = params[:note][:content]
-    created_note.save
-    puts Note.last.inspect
+    # created_note = Note.new
+    # created_note.title = params[:note][:title]
+    # created_note.content = params[:note][:content]
+    Note.create note_params
+    ap cookies
+
+
+   
     redirect_to notes_path
 
 end
