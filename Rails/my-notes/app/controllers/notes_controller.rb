@@ -41,15 +41,23 @@ end
 
 def create
     puts params.inspect
-    # created_note = Note.new
-    # created_note.title = params[:note][:title]
-    # created_note.content = params[:note][:content]
-    Note.create note_params
-    ap cookies
+    @note = Note.new note_params
+    @note.user = User.last
 
-
-   
+if @note.save
+    flash[:notice] = "Note created successfully"
     redirect_to notes_path
+else
+    puts @note.errors.inspect
+    puts "ALERT"
+    
+    flash[:alert] = "Problem occured while creating the note"
+    puts flash[:alert]
+    render 'new'
+
+end
+   
+    #redirect_to notes_path
 
 end
 

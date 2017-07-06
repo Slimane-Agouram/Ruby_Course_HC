@@ -1,5 +1,5 @@
-<%= form_for @note do |f| %>
-<%= f.text_field :title%>
-<%= f.text_area :content, :size=> "60x12px"%>
-<%= f.submit %>
+<%= simple_form_for @note, html: { class: 'form-vertical'} do |f| %>
+<%= f.input :title, label: 'Titre' %>
+<%= f.input :content, label: 'Description' %>
+<%= f.button :submit %>
 <%end%>
