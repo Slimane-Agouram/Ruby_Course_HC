@@ -41,6 +41,7 @@ def create
     created_note.title = params[:note][:title]
     created_note.content = params[:note][:content]
     created_note.save
+    puts Note.last.inspect
     redirect_to notes_path
 
 end
