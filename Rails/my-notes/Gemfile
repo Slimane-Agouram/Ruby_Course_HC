@@ -58,3 +58,5 @@ gem 'awesome_print'
 gem 'simple_form'
 
 gem 'devise'
+
+gem 'mongoid'
